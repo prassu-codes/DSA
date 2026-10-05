@@ -46,18 +46,17 @@ Explanation: Numbers in the range [1, 9] that are divisible by 3, 5, or 7 are 3,
 ## Solution
 
 **Language:** Python  
-**Runtime:** 27 ms (beats 58.86%)  
-**Memory:** 19.4 MB (beats 13.76%)  
-**Submitted:** 2026-10-05T11:27:34.505Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 19.3 MB (beats 13.76%)  
+**Submitted:** 2026-10-05T11:53:59.957Z  
 
 ```py
 class Solution:
     def sumOfMultiples(self, n: int) -> int:
-        sum=0
-        for i in range(1,n+1):
-            if i%3==0 or i%5==0 or i%7==0:
-                sum+=i  
-        return sum     
+        def get_sum(k):
+            m=n//k 
+            return k*m*(m+1)//2
+        return get_sum(3)+get_sum(5)+get_sum(7)-get_sum(15)-get_sum(35)-get_sum(21)+get_sum(105)
 ```
 
 ---
