@@ -39,7 +39,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T17:01:52.935Z  
+**Submitted:** 2026-10-05T17:03:31.105Z  
 
 ```py
 # cook your dish here
@@ -47,7 +47,11 @@ t=int(input())
 for _ in range(t):
     n=int(input())
     a=list(map(int,input().split()))
-    print(max(a))
+    m=0
+    for i in a:
+        if i>m:
+            m=i
+    print(m)
 ```
 
 ---
