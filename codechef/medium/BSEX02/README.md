@@ -48,12 +48,25 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T13:53:01.465Z  
+**Submitted:** 2026-10-05T13:59:46.684Z  
 
 ```py
 t=int(input())
 for _ in range(t):
     n=int(input())
+    l=1
+    h=n
+    c=0
+    while l<=h: 
+        m=(l+h)//2 
+        if m*(m+1)//2<=n:
+            c=m 
+            l=m+1 
+        else:
+            h=m-1 
+    print(c)
+            
+        
     
 ```
 
