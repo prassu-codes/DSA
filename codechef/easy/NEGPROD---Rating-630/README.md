@@ -62,22 +62,17 @@ NO
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-06T05:33:38.596Z  
+**Submitted:** 2026-10-06T05:42:05.623Z  
 
 ```py
 t = int(input())
 for _ in range(t):
     a=list(map(int,input().split()))
-    c=0
     d=0
     for i in a:
-        if i==0:
-            c+=1
-        elif i<0:
+        if i<0:
             d+=1
-    if (a[0]<0 and a[1]<0 and a[2]<0) or (a[0]>0 and a[1]>0 and a[2]>0):
-        print("no")
-    elif c>=2 or d>=2:
+    if a.count(0)>=2 or d>=2 or d==0:
         print("no")
     else:
         print("yes")
