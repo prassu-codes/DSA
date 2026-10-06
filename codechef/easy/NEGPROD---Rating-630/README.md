@@ -62,7 +62,7 @@ NO
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-06T05:42:05.623Z  
+**Submitted:** 2026-10-06T05:43:56.499Z  
 
 ```py
 t = int(input())
@@ -72,7 +72,7 @@ for _ in range(t):
     for i in a:
         if i<0:
             d+=1
-    if a.count(0)>=2 or d>=2 or d==0:
+    if a.count(0)>=2 or d>2 or d==0:
         print("no")
     else:
         print("yes")
