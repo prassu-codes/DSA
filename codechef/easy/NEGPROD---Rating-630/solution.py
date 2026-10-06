@@ -5,7 +5,7 @@ for _ in range(t):
     for i in a:
         if i<0:
             d+=1
-    if a.count(0)>=2 or d>2 or d==0:
+    if a.count(0)>=2 or (d>2) or (d==0) or (a.count(0)==1 and d==2):
         print("no")
     else:
         print("yes")
