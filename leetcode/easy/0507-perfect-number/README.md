@@ -38,8 +38,8 @@ Output: false
 
 **Language:** Python  
 **Runtime:** 3 ms (beats 90.37%)  
-**Memory:** 19.3 MB (beats 16.13%)  
-**Submitted:** 2026-10-06T12:18:26.313Z  
+**Memory:** 19.2 MB (beats 52.63%)  
+**Submitted:** 2026-10-06T12:19:37.048Z  
 
 ```py
 class Solution:
@@ -50,9 +50,8 @@ class Solution:
         for p in range(2,int(num**0.5)+1):
             if num%p==0:
                 s+=p
-                if num//p!=num:
-                    if p!=num//p:
-                        s+=num//p 
+                if p!=num//p:
+                    s+=num//p 
         return s==num
 ```
 
