@@ -39,22 +39,21 @@ Output: false
 **Language:** Python  
 **Runtime:** 3 ms (beats 90.37%)  
 **Memory:** 19.3 MB (beats 16.13%)  
-**Submitted:** 2026-10-06T12:12:45.652Z  
+**Submitted:** 2026-10-06T12:18:26.313Z  
 
 ```py
 class Solution:
     def checkPerfectNumber(self, num: int) -> bool:
-        s=0
-        for p in range(1,int(num**0.5)+1):
+        if num<=1:
+            return False
+        s=1
+        for p in range(2,int(num**0.5)+1):
             if num%p==0:
-                if p==num:
-                    continue
                 s+=p
-                if num//p==num:
-                    continue
-                if p!=num//p:
-                    s+=num//p 
-        return s==num and num!=1
+                if num//p!=num:
+                    if p!=num//p:
+                        s+=num//p 
+        return s==num
 ```
 
 ---
