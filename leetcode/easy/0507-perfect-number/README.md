@@ -37,9 +37,9 @@ Output: false
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.3 MB  
-**Submitted:** 2026-10-06T12:00:47.610Z  
+**Runtime:** 7 ms (beats 43.31%)  
+**Memory:** 19.3 MB (beats 16.13%)  
+**Submitted:** 2026-10-06T12:00:53.980Z  
 
 ```py
 class Solution:
