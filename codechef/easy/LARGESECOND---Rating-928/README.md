@@ -61,7 +61,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T17:09:31.722Z  
+**Submitted:** 2026-10-06T09:48:44.433Z  
 
 ```py
 t = int(input())
@@ -77,11 +77,13 @@ for _ in range(t):
         if j>o:
             o=j
     if o==m:
-        p=0
-        a.remove(o)
-        for k in a:
-            if k>p:
-                p=k
+        while o==m:
+            a.remove(o)
+            p=0
+            for k in a:
+                if k>p:
+                    p=k
+            o=p
         print(m+p)
     else:
         print(o+m)
