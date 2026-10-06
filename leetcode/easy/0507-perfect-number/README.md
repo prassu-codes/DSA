@@ -37,24 +37,24 @@ Output: false
 ## Solution
 
 **Language:** Python  
-**Runtime:** 7 ms (beats 43.31%)  
+**Runtime:** 3 ms (beats 90.37%)  
 **Memory:** 19.3 MB (beats 16.13%)  
-**Submitted:** 2026-10-06T12:00:53.980Z  
+**Submitted:** 2026-10-06T12:12:45.652Z  
 
 ```py
 class Solution:
     def checkPerfectNumber(self, num: int) -> bool:
-        if num==1:
-            return False
-        s=1
-        p=2
-        while p*p<=num:
+        s=0
+        for p in range(1,int(num**0.5)+1):
             if num%p==0:
-                s+=p 
+                if p==num:
+                    continue
+                s+=p
+                if num//p==num:
+                    continue
                 if p!=num//p:
                     s+=num//p 
-            p+=1 
-        return s==num
+        return s==num and num!=1
 ```
 
 ---
