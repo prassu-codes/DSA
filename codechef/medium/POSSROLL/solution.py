@@ -2,7 +2,7 @@
 x,k,y=map(int,input().split())
 p=[]
 i,q=0,0
-while i<=x:
+while i<x:
     q+=k
     p.append(q) 
     i+=1 
