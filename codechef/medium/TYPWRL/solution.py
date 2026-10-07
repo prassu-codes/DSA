@@ -11,9 +11,12 @@ for _ in range(t):
                 b+='L'
             else:
                 b+='R'
-    c,d=0,0
-    while i<=len(b)-1:
-        if b[d]==b[d+1]:
-            c+=1 
-        d+=1
+    c,d=1,1
+    for k in range(1,len(b)):
+        if b[k]==b[k-1]:
+            c+=1
+            d=max(c,d)
+        else:
+            c=1
+    print(d)
         
