@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:46:10.033Z  
+**Submitted:** 2026-10-07T14:52:58.823Z  
 
 ```py
 # cook your dish here
@@ -78,11 +78,14 @@ for _ in range(t):
                 b+='L'
             else:
                 b+='R'
-    c,d=0,0
-    while i<=len(b)-1:
-        if b[d]==b[d+1]:
-            c+=1 
-        d+=1
+    c,d=1,1
+    for k in range(1,len(b)):
+        if b[k]==b[k-1]:
+            c+=1
+            d=max(c,d)
+        else:
+            c=1
+    print(d)
         
 ```
 
