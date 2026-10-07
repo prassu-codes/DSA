@@ -45,15 +45,15 @@ All elements are distinct.
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.4 MB  
-**Submitted:** 2026-10-07T18:28:00.642Z  
+**Memory:** 19.3 MB  
+**Submitted:** 2026-10-07T18:28:12.716Z  
 
 ```py
 class Solution:
     def containsDuplicate(self, nums: list[int]) -> bool: 
         p=set(nums)
         q=list(p)
-        if q==nums.sort():
+        if q.sort()==nums.sort():
             return False 
         else:
             return True
