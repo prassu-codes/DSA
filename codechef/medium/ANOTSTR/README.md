@@ -72,7 +72,7 @@ NO
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:33:13.427Z  
+**Submitted:** 2026-10-07T15:40:43.979Z  
 
 ```py
 # cook your dish here
@@ -81,7 +81,13 @@ for _ in range(t):
     n=int(input())
     a=input()
     b=input()
-    
+    c=0
+        if a[i]==b[i]:
+            c+=1
+    if c==1:
+        print("yes")
+    else:
+        print("no")
 ```
 
 ---
