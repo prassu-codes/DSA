@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:55:19.086Z  
+**Submitted:** 2026-10-07T14:55:27.087Z  
 
 ```py
 t=int(input())
