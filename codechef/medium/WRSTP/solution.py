@@ -13,7 +13,7 @@ for _ in range(t):
             d[0]=d[0]-1
         else:
             d[0]=d[0]+1 
-    if (d[0] or d[1]==0) and (d[0] or d[1]==(2)) or ((d[0] or d[1]==(-2))):
+    if (d[0]==2 or d[1]==0) and (d[0]==-2 or d[1]==0) or ((d[0] or d[1]==(-2))):
         print("yes")
     else:
         print("no")
