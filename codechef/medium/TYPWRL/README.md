@@ -62,11 +62,16 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:37:11.103Z  
+**Submitted:** 2026-10-07T14:40:11.032Z  
 
 ```py
 # cook your dish here
-
+t=int(input())
+for _ in range(t):
+    n,m=map(int,input().split())
+    s=input()
+    l=input()
+    
 ```
 
 ---
