@@ -62,31 +62,28 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:52:58.823Z  
+**Submitted:** 2026-10-07T14:55:19.086Z  
 
 ```py
-# cook your dish here
 t=int(input())
 for _ in range(t):
-    n,m=map(int,input().split())
-    s=input()
-    l=input()
-    b=""
+    n, m = map(int,input().split())
+    s = input()
+    l = input()
+    b = ""
     for i in s:
-        for j in l:
-            if i==j:
-                b+='L'
-            else:
-                b+='R'
-    c,d=1,1
-    for k in range(1,len(b)):
-        if b[k]==b[k-1]:
-            c+=1
-            d=max(c,d)
+        if i in l:
+            b += 'L'
         else:
-            c=1
+            b += 'R'
+    c, d = 1, 1
+    for k in range(1, len(b)):
+        if b[k] == b[k - 1]:
+            c += 1
+            d = max(c, d)
+        else:
+            c = 1
     print(d)
-        
 ```
 
 ---
