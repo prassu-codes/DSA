@@ -3,7 +3,6 @@ class Solution:
         if len(nums)<=2:
             return -1 
         else:
-            nums.sort()
-            return nums[1]
-
-        
+            nums.remove(min(nums))
+            nums.remove(max(nums))
+            return nums[0]
