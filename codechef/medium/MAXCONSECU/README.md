@@ -50,7 +50,7 @@ The two `1`s at positions 2 and 3 are consecutive, so the maximum streak is `2`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T07:13:51.778Z  
+**Submitted:** 2026-10-08T07:26:40.448Z  
 
 ```py
 def findMaxConsecutiveOnes(nums): 
