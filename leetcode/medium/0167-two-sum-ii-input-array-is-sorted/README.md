@@ -56,9 +56,9 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.1 MB  
-**Submitted:** 2026-10-08T11:32:47.212Z  
+**Runtime:** 7 ms (beats 44.62%)  
+**Memory:** 22.3 MB (beats 30.36%)  
+**Submitted:** 2026-10-08T11:36:53.360Z  
 
 ```py
 class Solution:
@@ -72,7 +72,6 @@ class Solution:
                 a += 1
             elif num[a] + num[b] == target:
                 return [a+1,b+1]
-
 ```
 
 ---
