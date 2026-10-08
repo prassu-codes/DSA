@@ -2,22 +2,12 @@ t = int(input())
 for _ in range(t):
     n=int(input())
     a=list(map(int,input().split()))
-    m,o=0,0
-    for i in a:
-        if i>m:
-            m=i 
-    a.remove(m)
-    for j in a:
-        if j>o:
-            o=j
-    if o==m:
-        while o==m:
-            a.remove(o)
-            p=0
-            for k in a:
-                if k>p:
-                    p=k
-            o=p
-        print(m+p)
-    else:
-        print(o+m)
+    a.sort()
+    p=a[-1]
+    if len(a)==2:
+        print(a[0]+a[1])
+        break
+    for i in range(len(a)-2,0,-1):
+        if a[i]!=p:
+            print(p+a[i])
+            break
