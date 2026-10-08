@@ -56,23 +56,23 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
 ## Solution
 
 **Language:** Python  
-**Runtime:** 9 ms (beats 16.49%)  
+**Runtime:** 3 ms (beats 86.85%)  
 **Memory:** 22.2 MB (beats 42.72%)  
-**Submitted:** 2026-10-08T11:35:44.145Z  
+**Submitted:** 2026-10-08T11:32:52.686Z  
 
 ```py
 class Solution:
     def twoSum(self, num: list[int], target: int) -> list[int]:
-        a,b=0,len(num)-1
+        a = 0
+        b = len(num)-1
         while a < b:
-            total=num[a]+num[b]
-            if total> target:
+            if num[a] + num[b] > target:
                 b -= 1
-            elif total < target:
+            elif num[a] + num[b] < target:
                 a += 1
-            elif total == target:
+            elif num[a] + num[b] == target:
                 return [a+1,b+1]
-        return[]
+
 ```
 
 ---
