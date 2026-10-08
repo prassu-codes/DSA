@@ -13,8 +13,6 @@ for _ in range(t):
         for i in range(1,len(a)-2):
             if a[i]==a[i-1] and a[i]==a[i+1]:
                 c-=1 
-            if a[0]==a[1]:
-                c-=1 
             if a[-1]==a[len(a)-2]:
                 c-=1 
         print(c)
