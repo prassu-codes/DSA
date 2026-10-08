@@ -1,8 +1,13 @@
 class Solution:
     def thirdMax(self, nums: list[int]) -> int:
         p=set(nums)
-        q=sorted(list(p))
+        q=list(p)
+        c=0
         if len(q)>2:
-            return (q[-3])
+            while c<3:
+                b=max(q)
+                q.remove(b)
+                c+=1
+            return b
         else:
-            return (q[-1])
+            return max(q)  
