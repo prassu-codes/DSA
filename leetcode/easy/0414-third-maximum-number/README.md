@@ -61,19 +61,23 @@ The third distinct maximum is 1.
 
 **Language:** Python  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 20.6 MB (beats 8.54%)  
-**Submitted:** 2026-10-08T09:57:24.688Z  
+**Memory:** 20.6 MB (beats 22.48%)  
+**Submitted:** 2026-10-08T10:13:25.336Z  
 
 ```py
 class Solution:
     def thirdMax(self, nums: list[int]) -> int:
         p=set(nums)
-        q=sorted(list(p))
+        q=list(p)
+        c=0
         if len(q)>2:
-            return (q[-3])
+            while c<3:
+                b=max(q)
+                q.remove(b)
+                c+=1
+            return b
         else:
-            return (q[-1])
-
+            return max(q)  
 ```
 
 ---
