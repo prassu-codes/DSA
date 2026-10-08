@@ -66,7 +66,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T04:29:41.284Z  
+**Submitted:** 2026-10-08T04:31:20.352Z  
 
 ```py
 t=int(input())
@@ -83,8 +83,6 @@ for _ in range(t):
     else :
         for i in range(1,len(a)-2):
             if a[i]==a[i-1] and a[i]==a[i+1]:
-                c-=1 
-            if a[0]==a[1]:
                 c-=1 
             if a[-1]==a[len(a)-2]:
                 c-=1 
