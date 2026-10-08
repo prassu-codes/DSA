@@ -5,7 +5,7 @@ for _ in range(t):
     p=list(set(a))
     c=len(a)
     if p==a:
-        print(len(a))
+        print(c)
     elif len(a)==2:
         if a[0]==a[1]:
             print(1)
