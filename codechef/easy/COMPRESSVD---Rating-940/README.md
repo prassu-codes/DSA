@@ -66,7 +66,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T04:26:31.316Z  
+**Submitted:** 2026-10-08T04:29:26.097Z  
 
 ```py
 t=int(input())
@@ -76,7 +76,7 @@ for _ in range(t):
     p=list(set(a))
     c=len(a)
     if p==a:
-        print(len(a))
+        print(c)
     elif len(a)==2:
         if a[0]==a[1]:
             print(1)
