@@ -60,9 +60,9 @@ The third distinct maximum is 1.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.2 MB  
-**Submitted:** 2026-10-08T09:57:17.583Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 20.6 MB (beats 8.54%)  
+**Submitted:** 2026-10-08T09:57:24.688Z  
 
 ```py
 class Solution:
