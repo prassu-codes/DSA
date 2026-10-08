@@ -48,19 +48,18 @@ Explanation: Since 2 is neither the maximum nor the minimum value in nums, it is
 ## Solution
 
 **Language:** Python  
-**Runtime:** 16 ms (beats 22.21%)  
-**Memory:** 19.4 MB (beats 18.22%)  
-**Submitted:** 2026-10-08T10:27:48.162Z  
+**Runtime:** 13 ms (beats 34.19%)  
+**Memory:** 19.2 MB (beats 59.06%)  
+**Submitted:** 2026-10-08T10:30:09.823Z  
 
 ```py
 class Solution:
     def findNonMinOrMax(self, nums: List[int]) -> int:
+        nums.sort()
         if len(nums)<=2:
-            return -1 
+            return -1
         else:
-            nums.remove(min(nums))
-            nums.remove(max(nums))
-            return nums[0]
+            return nums[len(nums)//2]
 ```
 
 ---
