@@ -47,20 +47,17 @@ Integer	Binary
 
 **Language:** Python  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 19.3 MB (beats 38.53%)  
-**Submitted:** 2026-10-09T04:31:49.559Z  
+**Memory:** 19.5 MB (beats 14.20%)  
+**Submitted:** 2026-10-09T04:33:09.755Z  
 
 ```py
 class Solution:
     def reverseBits(self, n: int) -> int:
-        b=""
-        while n>0:
-            p=n%2
-            n=n//2 
-            b+=str(p)
-        b=b+'0'*(32-len(b)) 
-        a=int(b,2)
-        return a
+        b = ""
+        for _ in range(32):
+            b += str(n % 2)
+            n //= 2
+        return int(b, 2)
 
 ```
 
