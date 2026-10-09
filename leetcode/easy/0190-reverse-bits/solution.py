@@ -1,10 +1,7 @@
 class Solution:
     def reverseBits(self, n: int) -> int:
-        b=""
-        while n>0:
-            p=n%2
-            n=n//2 
-            b+=str(p)
-        b=b+'0'*(32-len(b)) 
-        a=int(b,2)
-        return a
+        b = ""
+        for _ in range(32):
+            b += str(n % 2)
+            n //= 2
+        return int(b, 2)
