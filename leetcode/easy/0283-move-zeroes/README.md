@@ -40,27 +40,18 @@ Output: [0]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.1 MB  
-**Submitted:** 2026-10-09T12:05:10.577Z  
+**Runtime:** 4 ms (beats 59.75%)  
+**Memory:** 20.5 MB (beats 25.51%)  
+**Submitted:** 2026-10-09T12:29:01.251Z  
 
 ```py
 class Solution:
     def moveZeroes(self, nums: list[int]) -> None:
-        if len(nums)==2:
-            nums[0],nums[1]==nums[1],nums[0]
-        else:   
-            for i in range(1,len(nums)-1):
-                if nums[i-1]==0 and nums[i]!=0:
-                    nums[i],nums[i-1]=nums[i-1],nums[i]
-                else:
-                    nums[i],nums[i+1]=nums[i+1],nums[i] 
-                    nums[i],nums[i-1]=nums[i-1],nums[i]
-                
-
-
-
-        
+        j=0
+        for i in range(len(nums)):
+            if nums[i]!=0:
+                nums[i],nums[j]=nums[j],nums[i]
+                j+=1
 ```
 
 ---
